@@ -9,8 +9,10 @@ public class GradeCalculator {
 
         if (marks >= 80) {
             System.out.println("Grade: A+");
-        } else if (marks >= 70) {//T494
+        } else if (marks > 74 && marks < 80) {//T494
             System.out.println("Grade: A");
+        } else if (marks >= 70 && marks < 75) {
+            System.out.println("Grade: A-");
         } else if (marks >= 60) {
             System.out.println("Grade: B"//Tanim494);
         } else if (marks >= 50) {
