@@ -32,6 +32,8 @@ public class PrimeNumbers {
     // Function to check if a number is prime
     public static boolean isPrime(int num) {
         if (num < 2) return false; // Prime numbers start from 2
+        /*The condition i * i <= num means we only check up to √num (square root of num).
+        This is an optimization because if num is divisible by a number greater than √num, it must have already been checked with a smaller divisor. */
         for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
                 return false;
