@@ -34,7 +34,7 @@ public class IdCard {
 		student2.displayId();
 		student1.displayId();
 		
-		student3.changeName("Riduan");
+		student3.changeName("Rifat");
 		student3.changeRoll(143);
 		student3.displayId();
 	}
